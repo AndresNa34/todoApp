@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +14,15 @@ export class HomeComponent {
     'Crear Proyecto',
     'Crear componente',
     'Crear Servicio'
-  ])
+  ]);
 
+  changeHandler(event: Event){
+    const input = event.target as HTMLInputElement;
+    const newTask = input.value;
+    this.tasks.update((tasks) => [...tasks, newTask]);
+  }
+
+  deleteTask(index: number){
+    this.tasks.update((tasks) =>  tasks.filter((task, position) => position !== index));
+  }
 }
