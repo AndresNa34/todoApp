@@ -1,0 +1,57 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE [name] = 'TodoDB')
+BEGIN
+	CREATE DATABASE TodoDB
+END
+GO
+
+USE TodoDB
+GO
+
+-- CREATE TASK
+IF NOT EXISTS (SELECT * FROM sys.sysobjects WHERE [name] = 'Task' and xtype = 'U')
+BEGIN
+	CREATE TABLE Task (
+		Id INT NOT NULL IDENTITY(1,1),
+		Title VARCHAR(50) NOT NULL,
+		Completed BIT NOT NULL DEFAULT 0,
+		Editing BIT NOT NULL DEFAULT 0,
+		CONSTRAINT PKTask PRIMARY KEY (Id)
+	)
+END
+GO
+
+-- INSERT FIELD DATA
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 1)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Levantarse Temprano')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 2)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Lavar Ropa')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 3)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Lavarse los Dientes')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 4)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Terminar Tarea')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 5)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Estudiar Angular')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 6)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Levantarse Temprano')
+END
+
+IF NOT EXISTS (SELECT * FROM Task WHERE Id = 7)
+BEGIN
+	INSERT INTO Task (Title) VALUES ('Crear el Api')
+END

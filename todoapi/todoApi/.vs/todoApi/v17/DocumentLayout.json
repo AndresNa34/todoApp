@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|d:\\dev\\todoapp\\todoapi\\todoapi\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|d:\\dev\\todoapp\\todoapi\\todoapi\\todoapi\\data\\tododb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|solutionrelative:todoapi\\data\\tododb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|d:\\dev\\todoapp\\todoapi\\todoapi\\todoapi\\services\\assignmentservice\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|solutionrelative:todoapi\\services\\assignmentservice\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|d:\\dev\\todoapp\\todoapi\\todoapi\\todoapi\\services\\assignmentservice\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{577244B4-893A-45BE-AA77-F53F1C84769D}|todoApi\\todoApi.csproj|solutionrelative:todoapi\\services\\assignmentservice\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Program.cs",
+              "RelativeDocumentMoniker": "todoApi\\Program.cs",
+              "ToolTip": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Program.cs",
+              "RelativeToolTip": "todoApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T22:37:03.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssignmentService.cs",
+              "DocumentMoniker": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Services\\AssignmentService\\AssignmentService.cs",
+              "RelativeDocumentMoniker": "todoApi\\Services\\AssignmentService\\AssignmentService.cs",
+              "ToolTip": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Services\\AssignmentService\\AssignmentService.cs",
+              "RelativeToolTip": "todoApi\\Services\\AssignmentService\\AssignmentService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T22:34:59.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAssignmentService.cs",
+              "DocumentMoniker": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Services\\AssignmentService\\IAssignmentService.cs",
+              "RelativeDocumentMoniker": "todoApi\\Services\\AssignmentService\\IAssignmentService.cs",
+              "ToolTip": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Services\\AssignmentService\\IAssignmentService.cs",
+              "RelativeToolTip": "todoApi\\Services\\AssignmentService\\IAssignmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T22:26:10.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoDB.cs",
+              "DocumentMoniker": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Data\\TodoDB.cs",
+              "RelativeDocumentMoniker": "todoApi\\Data\\TodoDB.cs",
+              "ToolTip": "D:\\Dev\\TodoApp\\todoapi\\todoApi\\todoApi\\Data\\TodoDB.cs",
+              "RelativeToolTip": "todoApi\\Data\\TodoDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T22:23:04.258Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
