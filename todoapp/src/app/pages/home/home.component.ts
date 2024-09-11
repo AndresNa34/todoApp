@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, effect, inject, Injector, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
@@ -12,20 +12,12 @@ import {Task} from './../../models/task';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  tasks = signal<Task[]>([
-    {
-      id: Date.now(),
-      title: 'Crear proyecto',
-      completed: false
-    },
-    {
-      id: Date.now(),
-      title: 'Crear componentes',
-      completed: false
-    }
-  ]);
+  tasks = signal<Task[]>([]);
 
   filter = signal<'all' | 'pending' | 'completed'>('all');
+
+  //Los computed siempre tienen un retorno,
+  // a partir de otros signals genera una nueva signal
   tasksByFilter = computed(() => {
     const filter = this.filter();
     const tasks = this.tasks();
@@ -44,6 +36,42 @@ export class HomeComponent {
       Validators.required,
     ]
   });
+
+  //El effect hace tracking, no genera retorno.Se ejecuta cada vez
+  //que la signal tiene un cambio
+  constructor(){
+    /*
+    effect(() => {
+      const tasks = this.tasks();
+      console.log(tasks);
+
+      //pequenno espacio de almacenamiento
+      localStorage.setItem('tasks',JSON.stringify(tasks));
+    })*/
+  }
+
+  //Para usar el effect fuera del consturctor se debe crear el inyector
+  injector = inject(Injector);
+  trackTasks(){
+    effect(() => {
+      const tasks = this.tasks();
+      console.log(tasks);
+
+      //pequenno espacio de almacenamiento
+      localStorage.setItem('tasks',JSON.stringify(tasks));
+    }, {injector: this.injector});
+  }
+
+
+  //al inicializar el componente
+  ngOnInit(){
+    const storage = localStorage.getItem('tasks');
+    if(storage) {
+      const tasks = JSON.parse(storage);
+      this,tasks.set(tasks);
+    }
+    this.trackTasks();
+  }
 
   changeHandler(){
     if (this.newTaskCtrl.valid){
