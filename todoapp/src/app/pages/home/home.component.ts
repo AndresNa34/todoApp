@@ -68,7 +68,7 @@ export class HomeComponent {
     const storage = localStorage.getItem('tasks');
     if(storage) {
       const tasks = JSON.parse(storage);
-      this,tasks.set(tasks);
+      this.tasks.set(tasks);
     }
     this.trackTasks();
   }
